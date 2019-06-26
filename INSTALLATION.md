@@ -3,6 +3,8 @@
 You can setup Mongo on both your laptop and your server. There is [installation documentation](https://docs.mongodb.com/manual/installation/) on the Mongo website but the below
 summarizes the steps needed for each OS.
 
+If you are using cloud9, you should have already installed mongo on your server.  If you are using another system, these instructions should be helpful.
+
 ## Installing on MacOS
 
 First, tap the official MongoDb repository:
