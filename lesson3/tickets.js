@@ -7,7 +7,8 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 
-let tickets = []
+let tickets = [];
+let id = 0;
 
 app.use(express.static('public'));
 
