@@ -11,7 +11,7 @@ var app = new Vue({
   methods: {
     async getTickets() {
       try {
-        let response = await axios.get("http://localhost:3000/api/tickets");
+        let response = await axios.get("http://web.skouzini.info:3000/api/tickets");
         this.tickets = response.data;
         return true;
       } catch (error) {
@@ -20,7 +20,7 @@ var app = new Vue({
     },
     async addTicket() {
       try {
-        let response = await axios.post("http://localhost:3000/api/tickets", {
+        let response = await axios.post("http://web.skouzini.info:3000/api/tickets", {
           name: this.addedName,
           problem: this.addedProblem
         });
@@ -34,7 +34,7 @@ var app = new Vue({
     },
     async deleteTicket(ticket) {
       try {
-        let response = axios.delete("http://localhost:3000/api/tickets/" + ticket.id);
+        let response = axios.delete("http://web.skouzini.info:3000/api/tickets/" + ticket.id);
         this.getTickets();
         return true;
       } catch (error) {
